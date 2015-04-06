@@ -93,6 +93,7 @@
      * Option to show shorthand big numbers (human friendly)
      */
 
+define('justgage',['raphael','eve'],function(raphael,eve){
  JustGage = function(config) {
 
   var obj = this;
@@ -1049,3 +1050,6 @@ var ie = (function(){
     );
     return v > 4 ? v : undef;
 }());
+
+return JustGage;
+});
