@@ -93,10 +93,12 @@
      * Option to show shorthand big numbers (human friendly)
      */
 
-define('justgage',['raphael','eve'],function(raphael,eve){
- JustGage = function(config) {
+define(['raphael'],function(Raphael){
+var JustGage = function(config) {
 
   var obj = this;
+
+  var eve = Raphael.eve;
 
   // Helps in case developer wants to debug it. unobtrusive
   if (config === null || config ===  undefined) {
