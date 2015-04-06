@@ -1051,5 +1051,7 @@ var ie = (function(){
     return v > 4 ? v : undef;
 }());
 
+JustGage.getRandomInt = getRandomInt;
+
 return JustGage;
 });
